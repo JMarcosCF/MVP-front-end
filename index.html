@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibilide" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <title> Projeto MVP</title>
+
+</head>
+
+<body>
+    <!-- Cabeçalho de iformações do sistema -->
+    <header>
+        <div class="title">
+            <h2> Equipamentos Eletrônicos</h2>
+        </div>  
+        <div class="banner">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZrVISkMGN74oCndlkHXz6AqYlmt87Mslb6Q&usqp=CAU"
+                alt="y">
+        </div> 
+    </header>
+
+    <!-- Opções para cadastrar equipamento-->
+    <section classe="newItem">
+        <input type="text" id="inputModelo" placeholder="Cadastrar novo equipamento">
+        <input type="text" id="inputFabricante" placeholder="Fabricante">
+        <span onclick="newItem()" class="addBtn">Cadastrar</span>
+    </section>
+
+    <!-- Tabela com equipamentos cadastrados na base existents -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Modelo</th>
+                <th>Fabricante</th>
+                
+            </tr>
+        </table>
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
